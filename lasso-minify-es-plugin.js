@@ -1,10 +1,10 @@
-var UglifyJS = require("uglify-js");
+var UglifyES = require("uglify-js");
 
 function minify(src, options) {
     options = options || {};
     options.fromString = true;
 
-    return UglifyJS.minify(src, options).code;
+    return UglifyES.minify(src, options).code;
 }
 
 function isInline(lassoContext) {
@@ -19,7 +19,7 @@ function isInline(lassoContext) {
     return false;
 }
 
-module.exports = function (lasso, pluginConfig) {
+module.exports = function minfiyES(lasso, pluginConfig) {
     lasso.addTransform({
         contentType: 'js',
 

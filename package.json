@@ -1,6 +1,6 @@
 {
-  "name": "lasso-minify-js",
-  "description": "Transform for Lasso.js to minify JavaScript using UglifyJS",
+  "name": "lasso-minify-es",
+  "description": "Transform for Lasso.js to minify JavaScript using UglifyJS harmony branch for es",
   "keywords": [
     "lasso",
     "lasso-plugin",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lasso-js/lasso-minify-js.git"
+    "url": "https://github.com/smulder/lasso-minify-js.git"
   },
   "scripts": {
     "test": "node_modules/.bin/jshint *.js"
@@ -17,11 +17,12 @@
   "author": "Patrick Steele-Idem <pnidem@gmail.com>",
   "contributors": [
     "Patrick Steele-Idem <pnidem@gmail.com>",
-    "Phillip Gates-Idem <phillip.idem@gmail.com>"
+    "Phillip Gates-Idem <phillip.idem@gmail.com>",
+    "Scott Mulder <muldersc@gmail.com>"
   ],
-  "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
+  "maintainers": "Scott Mulder <muldersc@gmail.com>",
   "dependencies": {
-    "uglify-js": "^2.7.3"
+    "uglify-js": "mishoo/UglifyJS2#harmony"
   },
   "devDependencies": {
     "mocha": "~1.15.1",
@@ -33,6 +34,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "main": "lasso-minify-js-plugin.js",
+  "main": "lasso-minify-es-plugin.js",
   "version": "1.4.0"
 }
