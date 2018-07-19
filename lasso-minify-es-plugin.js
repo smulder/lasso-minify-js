@@ -1,4 +1,4 @@
-var UglifyES = require("uglify-js");
+var UglifyES = require("uglify-es");
 
 function minify(src, options) {
     options = options || {};

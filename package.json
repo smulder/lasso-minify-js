@@ -22,6 +22,7 @@
   ],
   "maintainers": "Scott Mulder <muldersc@gmail.com>",
   "dependencies": {
+    "uglify-es": "^3.3.9",
     "uglify-js": "mishoo/UglifyJS2#harmony"
   },
   "devDependencies": {
